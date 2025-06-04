@@ -1,30 +1,62 @@
 const projects = [
   {
     icon: "🛍️",
-    title: "E-Commerce Platform",
-    description: "Plataforma completa de comercio electrónico con carrito de compras, pagos y panel de administración.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"]
+    title: "Lab 2: Administración de servidores remotos",
+    description: "LOGS DE SSH, CURL, HTTP y más.",
+    tags: ["Linux", "SSH", "Curlo", "HTTP"],
+    demo: "https://221256.devng.online/lab2/respuestas.txt",
+    code: "https://github.com/DiegoLinares11/Lab-2-Administracion-de-servidores-remotos"
   },
   {
     icon: "📱",
-    title: "App de Gestión de Tareas",
-    description: "Aplicación web para gestión de proyectos y tareas con colaboración en tiempo real.",
-    tags: ["Vue.js", "Socket.io", "Express", "PostgreSQL"]
+    title: "HTML ONLY",
+    description: "Página web simple con HTML, Es una historia interactiva utilizando etiquetas como HREF, UL y ARTICLE.",
+    tags: ["HTML", "HREF", "UL", "ARTICLE"],
+    demo: "https://221256.devng.online/lab3/",
+    code: "https://github.com/DiegoLinares11/lab3-HTML"
   },
   {
-    icon: "🌐",
-    title: "API RESTful con Go",
-    description: "API escalable desarrollada con Go, implementando mejores prácticas y arquitectura limpia.",
-    tags: ["Go", "Gin", "PostgreSQL", "Docker"]
+    icon: "🪷",
+    title: "CSS ONLY",
+    description: "Página web simple con CSS, es interactiva, y tiene bonitos diseños.",
+    tags: ["Clases", "ID", "tags", "Selectores universales"],
+    demo: "https://221256.devng.online/lab4/",
+    code: "https://github.com/DiegoLinares11/Lab4-CSS"
+  },
+  {
+    icon: "🖥️",
+    title: "JS ONLY",
+    description: " realizar un chat que se conecte al servidor https://chat.devng.online/chats Enlaces a un sitio externo. (Haciendo POST a esa ruta se escriben los chats y haciendo GET a esa ruta se leen los chats).",
+    tags: ["JS", "document....", "async", "await", "function"],
+    demo: "https://devng.online/221256/lab05JS/",
+    code: "https://github.com/DiegoLinares11/lab5-JS-Only"
+  },
+  {
+    icon: "🔧🤚",
+    title: "Lab 6: Backend only - Parte 1",
+    description: "Desarrollar un backend que proporcione ciertos endpoints obligatorios",
+    tags: ["GET", "POST", "PUT", "DELETE, DOCKER"],
+    demo: "https://221256.devng.online/lab4/",
+    code: "https://github.com/DiegoLinares11/Lab-6-Backend-only"
+  },
+
+  {
+    icon: "🔧🤚",
+    title: "Lab 6: Backend only - Parte 2",
+    description: "Desarrollar un backend que proporcione ciertos endpoints obligatorios este se agregaron nuevos endpoints y se mejoró la estructura del proyecto.",
+    tags: ["GET", "POST", "PUT", "DELETE, DOCKER"],
+    demo: "https://221256.devng.online/lab4/",
+    code: "https://github.com/DiegoLinares11/Lab-6-Backend-only"
   }
 ];
+
 
 const Projects = () => {
   return (
     <section id="proyectos" className="section">
       <h2>Proyectos Destacados</h2>
       <div className="projects-grid">
-        {projects.map(({ icon, title, description, tags }, idx) => (
+        {projects.map(({ icon, title, description, tags, demo, code }, idx) => (
           <div className="project-card fade-in" key={idx}>
             <div className="project-image">{icon}</div>
             <div className="project-content">
@@ -36,8 +68,12 @@ const Projects = () => {
                 ))}
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">Ver Demo</a>
-                <a href="#" className="project-link">Código</a>
+                <a href={demo} className="project-link" target="_blank" rel="noopener noreferrer">
+                  Ver Demo
+                </a>
+                <a href={code} className="project-link" target="_blank" rel="noopener noreferrer">
+                  Código
+                </a>
               </div>
             </div>
           </div>
