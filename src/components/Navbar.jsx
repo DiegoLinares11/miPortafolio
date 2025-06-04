@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
-        <div className="logo">Tu Nombre</div>
+        <div className="logo">Diego Linares</div>
         <ul className="nav-links">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#skills">Habilidades</a></li>
