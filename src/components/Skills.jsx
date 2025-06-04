@@ -20,9 +20,9 @@ const Skills = () => {
       <div className="skills-grid">
         {[
           { icon: "⚛️", title: "Frontend", text: "React, Next.js, Vue.js, Vite, HTML5, CSS3, JavaScript ES6+, TypeScript" },
-          { icon: "🔧", title: "Backend", text: "Node.js, Express, Go, REST APIs, GraphQL, Microservicios" },
-          { icon: "🗄️", title: "Base de Datos", text: "MongoDB, PostgreSQL, MySQL, Redis, Firebase" },
-          { icon: "☁️", title: "DevOps & Cloud", text: "Docker, AWS, Vercel, Netlify, CI/CD, Nginx" }
+          { icon: "🔧", title: "Backend", text: "Node.js, Express, Go, REST APIs" },
+          { icon: "🗄️", title: "Base de Datos", text: "MongoDB, PostgreSQL, MySQL, Firebase" },
+          { icon: "☁️", title: "DevOps & Cloud", text: "Docker, AWS, Vercel, Netlify, Nginx" }
         ].map(({ icon, title, text }) => (
           <div className="skill-card fade-in" key={title}>
             <div className="skill-icon">{icon}</div>
