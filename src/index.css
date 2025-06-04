@@ -247,7 +247,7 @@
               text-decoration: none;
               transition: all 0.3s ease;
               position: relative;
-              font-size: 1.25rem; /* Aumenta el tamaño de la letra */
+              font-size: 1.45rem; /* Aumenta el tamaño de la letra */
            }
 
            .nav-links a:hover {
@@ -650,4 +650,23 @@
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+.about-section {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.35rem; 
+    color: var(--text-secondary);
+}
+
+.about-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
