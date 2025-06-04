@@ -50,3 +50,6 @@ npm install
 # Inicia el servidor de desarrollo
 npm run dev
 ```
+Créditos & Inspiración
+
+Este proyecto fue desarrollado como parte de mi crecimiento personal y profesional como desarrollador full stack. Las animaciones fueron hechas desde cero, combinando ideas modernas y referencias visuales adaptadas a mi estilo. 
