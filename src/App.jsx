@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import SocialBar from "./components/SocialBar";
 import CursorEffects from "./components/CursorEffects";
+import About from "./components/About";
 
 import "./index.css";
 
@@ -17,11 +18,13 @@ const App = () => {
       <AnimatedBackground />
       <Navbar />
       <Hero />
+      <About />
       <Skills />
       <Projects />
       <Contact />
       <SocialBar />
       <CursorEffects />
+
     </>
   );
 };
