@@ -24,17 +24,6 @@
             overflow-x: hidden;
         }
         /* Interactive Cursor */
-        .cursor {
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background: var(--primary-green);
-            border-radius: 50%;
-            pointer-events: none;
-            mix-blend-mode: difference;
-            z-index: 9999;
-            transition: transform 0.1s ease;
-        }
 
         .cursor-trail {
             position: fixed;
@@ -491,19 +480,17 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
-
-/* Posición general para escritorio */
+/* Estilo general escritorio */
 .social-bar {
   position: fixed;
   top: 50%;
-  left: 2rem;
+  left: 1rem;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
   font-size: 2.4rem;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .social-bar a {
@@ -516,7 +503,7 @@
   color: var(--primary-green);
 }
 
-/* Responsive: cambia a horizontal en móviles */
+/* Responsive móvil */
 @media (max-width: 768px) {
   .social-bar {
     position: fixed;
@@ -524,14 +511,19 @@
     left: 50%;
     transform: translateX(-50%);
     flex-direction: row;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 0.6rem 1.2rem;
-    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.4rem 0.8rem;
+    border-radius: 40px;
     backdrop-filter: blur(6px);
-    font-size: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    font-size: 1.7rem;
+    z-index: 999;
+  }
+
+  .social-bar a {
+    font-size: 1.8rem;
   }
 }
-
 
 .highlight::after {
   content: "|";
