@@ -18,7 +18,7 @@ const Hero = () => {
 
 
   return (
-    <section id="inicio" className="hero hero-with-photo">
+    <section id="inicio" className="hero">
       <div className="hero-content">
         <h1>
           Hola, soy <span className="highlight">{text}</span>

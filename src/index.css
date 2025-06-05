@@ -211,36 +211,7 @@
            .nav-links a:hover::after {
               width: 100%;
            }
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-        }
 
-        .hero-content {
-            max-width: 800px;
-            padding: 0 2rem;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--text-primary), var(--accent-blue), var(--primary-green));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-        }
 
         .cta-button {
             display: inline-block;
@@ -514,43 +485,6 @@
             transition: width 0.1s ease;
         }
 
-.hero-with-photo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 0 4rem;
-  min-height: 100vh;
-  text-align: left;
-}
-
-.hero-content {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
-  width: 50%;
-}
-
-.hero-photo {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  min-width: 300px;
-  max-width: 400px;
-  width: 50%;
-}
-
-.hero-photo img {
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid var(--primary-green);
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
-  animation: fadeIn 1s ease-out;
-}
-
 .highlight {
   background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
@@ -558,23 +492,6 @@
   background-clip: text;
 }
 
-@media (max-width: 768px) {
-  .hero-with-photo {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .hero-content,
-  .hero-photo {
-    width: 100%;
-    max-width: none;
-  }
-
-  .hero-photo {
-    margin-top: 2rem;
-  }
-}
 
 /* Posición general para escritorio */
 .social-bar {
@@ -636,4 +553,120 @@
     margin: 0 auto;
     font-size: 1.35rem; 
     color: var(--text-secondary);
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 4rem;
+  min-height: 100vh;
+  text-align: left;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  width: 50%;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent-blue), var(--primary-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.4);
+}
+
+.hero-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+  max-width: 400px;
+  width: 50%;
+}
+
+.hero-photo img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary-green);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  animation: fadeIn 1s ease-out;
+}
+
+.highlight {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-content,
+  .hero-photo {
+    width: 100%;
+    max-width: none;
+  }
+
+  .hero-photo {
+    margin-top: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
