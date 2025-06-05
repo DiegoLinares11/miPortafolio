@@ -486,19 +486,17 @@
 /* Móvil: barra horizontal fija abajo */
 @media (max-width: 768px) {
   .social-bar {
-    position: fixed;
     bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: row;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem 1rem;
-    border-radius: 40px;
-    backdrop-filter: blur(5px);
-    font-size: 1.8rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    z-index: 999;
+    left: 0;
+    right: 0;
+    width: 90%; /* Ancho controlado */
+    margin: 0 auto; /* Centrado seguro */
+    transform: none; /* Elimina transform anterior */
+    padding: 0.5rem; /* Padding reducido */
+    font-size: 1.4rem; /* Tamaño más adecuado */
+    justify-content: center; /* Centra los íconos */
   }
+
 
   .social-bar a {
     font-size: 1.8rem;
@@ -637,5 +635,41 @@
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Estilos responsivos para nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.95);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
   }
 }
