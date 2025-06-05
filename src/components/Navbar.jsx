@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SocialBar from "./SocialBar";
 
 const Navbar = () => {
   useEffect(() => {
@@ -21,7 +22,6 @@ const Navbar = () => {
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
           <li><a href="#contacto">Contacto</a></li>
-
         </ul>
       </div>
     </nav>
