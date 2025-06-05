@@ -610,7 +610,7 @@
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 2rem 1.5rem;
+    padding: 6rem 1.5rem 2rem; /* TOP | SIDES | BOTTOM */
   }
 
   .hero-content,
