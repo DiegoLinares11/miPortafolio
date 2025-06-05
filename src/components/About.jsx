@@ -18,9 +18,6 @@ const About = () => {
             Además de lo técnico, he desarrollado competencias en pensamiento crítico, liderazgo, comunicación efectiva y diseño centrado en el usuario.
             Actualmente me enfoco en proyectos que combinan tecnología, creatividad y resolución de problemas reales.
             </p>
-
-
-        <SocialBar />
       </div>
     </section>
   );

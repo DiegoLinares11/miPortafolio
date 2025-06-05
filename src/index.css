@@ -189,7 +189,7 @@
               text-decoration: none;
               transition: all 0.3s ease;
               position: relative;
-              font-size: 1.45rem;
+              font-size: 1.15rem;
            }
 
            .nav-links a:hover {
@@ -576,13 +576,17 @@
   }
 }
 
-
+/* Posición general para escritorio */
 .social-bar {
-  margin-top: 2rem;
+  position: fixed;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 2.7rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2.4rem;
+  z-index: 1000;
 }
 
 .social-bar a {
@@ -595,23 +599,22 @@
   color: var(--primary-green);
 }
 
-
+/* Responsive: cambia a horizontal en móviles */
 @media (max-width: 768px) {
-    .social-bar {
-        position: fixed;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        flex-direction: row;
-        background: rgba(0, 0, 0, 0.6);
-        padding: 0.5rem 1rem;
-        border-radius: 50px;
-        backdrop-filter: blur(6px);
-    }
-    .social-bar a {
-        font-size: 2.2rem; /* También puedes ajustar para móvil */
-    }
+  .social-bar {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    backdrop-filter: blur(6px);
+    font-size: 2rem;
+  }
 }
+
 
 .highlight::after {
   content: "|";
