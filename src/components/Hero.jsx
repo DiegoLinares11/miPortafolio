@@ -28,6 +28,7 @@ const Hero = () => {
           Especializado en tecnologías web modernas como React, Next.js, Vue.js, Node.js y Go.
           Me apasiona crear experiencias digitales impactantes.
           También tengo experiencia en bases de datos como MongoDB, DynamoDB, PostgreSQL y Firebase.
+          Portafolio poniendo a prueba mis habilidades en CSS y JavaScript, con un enfoque en la usabilidad y el rendimiento.
         </p>
         <a href="#proyectos" className="cta-button">Ver Mis Proyectos</a>
       </div>
