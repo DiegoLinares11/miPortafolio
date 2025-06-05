@@ -29,7 +29,7 @@ Bienvenido a mi portafolio personal desarrollado con **React + Vite**, donde mue
 
 ## 🔗 Enlaces
 
-- **🔴 Deploy:** [https://tusitio.vercel.app](https://tusitio.vercel.app) ← Reemplaza con el enlace real
+- **🔴 Deploy:** [https://tusitio.vercel.app](https://tusitio.vercel.app) 
 - **📁 Código fuente:** [GitHub Repository](https://github.com/DiegoLinares11/miPortafolio)
 - **📄 CV:** [Ver CV PDF](./public/CVDiegoLinares.pdf)
 
