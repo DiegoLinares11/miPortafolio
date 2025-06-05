@@ -22,9 +22,8 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
-      <SocialBar />
       <CursorEffects />
-
+      <SocialBar />
     </>
   );
 };

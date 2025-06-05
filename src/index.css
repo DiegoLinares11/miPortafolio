@@ -634,10 +634,6 @@
     font-size: 1rem;
   }
 
-  .nav-links {
-    display: none;
-  }
-
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
